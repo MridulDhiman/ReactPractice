@@ -3,19 +3,11 @@ import "./Pricing.css";
 
 const Pricing = ({prices}) => {
    
-  const priceList = prices.map((price) => {
-    return price.monthlyFlag === true ?
-     <PricingItem 
-     type={price.type} 
-     amount={price.monthly_price} 
-     content={price.content} 
-     /> : 
-    <PricingItem 
-     type={price.type} 
-     amount={price.yearly_price} 
-     content={price.content} 
-     />
-  })
+  const priceList = prices.map((price) => <PricingItem 
+  type={price.type}
+  amount={price.price}
+  content={price.content}
+   />)
 
     return (
 <>
