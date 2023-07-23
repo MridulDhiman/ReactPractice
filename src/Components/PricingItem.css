@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+.pricing-container {
+    font-size: 1rem;
+/* background: linear-gradient(104deg,#622a81 0%, #0050ff 80%);
+background: -webkit-linear-gradient(104deg,#622a81 0%, #0050ff 80%);
+background: -moz-linear-gradient(104deg,#622a81 0%, #0050ff 80%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */
+
+color: blueviolet;
+    background: white;
+    /* border: 1px solid; */
+    width: 10rem;
+    padding: 0.1rem 3rem;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: auto 40%;
+    box-shadow: 3px 4px 14px -4px rgba(0,0,0,0.75);
+-webkit-box-shadow: 3px 4px 14px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 4px 14px -4px rgba(0,0,0,0.75);
+border-radius: 1rem;
+cursor:pointer;
+}
+/* .pricing-container:active, .pricing-container:target, */
+.pricing-container:hover {
+    
+    /* background: linear-gradient(104deg,#622a81 0%, #0050ff 80%);
+    background: -webkit-linear-gradient(104deg,#622a81 0%, #0050ff 80%);
+    background: -moz-linear-gradient(104deg,#622a81 0%, #0050ff 80%); */
+    font-size:1.1rem;
+    width:12rem;
+    background: blueviolet;
+    color: white;
+   
+}
+
+
+.pricing-container .price {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.pricing-container .subs-container{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+
+.pricing-container .line {
+    width: 100%;
+}
+
+.pricing-container .learn-more-btn {
+    outline: none;
+    text-decoration: none;
+    border: 1px solid blueviolet;
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+    background: white;
+padding: 2px 1rem;
+cursor: pointer;
+}
+
+
+
+.pricing-container .learn-more-btn span {
+font-size: 1.023rem;
+
+background: linear-gradient(104deg,#622a81 0%, #0050ff 80%);
+background: -webkit-linear-gradient(104deg,#622a81 0%, #0050ff 80%);
+background: -moz-linear-gradient(104deg,#622a81 0%, #0050ff 80%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.pricing-container .learn-more-btn span:hover{
+    font-size: 1.05rem;
+    border-radius:1rem;
+}
+
+
+
+.pricing-container hr {
+    border-top: 1px solid blueviolet;
+}
+
