@@ -4,17 +4,26 @@ import "./TogglePrice.css"
 import React, {useState} from "react"
 
 const TogglePrice = ({setMonthlyFlag}) => {
-    const [toggle, setToggle] = useState('monthly');
-    const clickHandler = (e) => {
-       setToggle('yearly');
-       setMonthlyFlag(false);
+    const [isMonthly, setIsMonthly] = useState(true);
+
+    if(isMonthly === false) {
+        setMonthlyFlag(false);
     }
-    const offClickHandler = (e) => {
-        setToggle('monthly');
+    else{
         setMonthlyFlag(true);
     }
-    const toggleIcon = toggle === 'monthly' ? <ToggleOnIcon fontSize="large" className='toggle-icon' onClick={clickHandler}/>
-    : <ToggleOffIcon fontSize='large' className='toggle-icon' onClick={offClickHandler}/>
+    const clickHandler = (e) => {
+        console.log("it's working");
+       setIsMonthly(false);
+       
+    }
+    const offClickHandler = (e) => {
+        setIsMonthly(true);
+       
+    }
+    const toggleIcon = isMonthly === true ? <ToggleOnIcon fontSize="large" className='toggle-icon' onClick={clickHandler}/>
+    : <ToggleOffIcon fontSize='large' style={{color: "black"}} className='toggle-icon' onClick={offClickHandler}/>
+
     return (
     <>
 <div className="toggle-bar">
