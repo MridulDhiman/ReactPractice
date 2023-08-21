@@ -25,22 +25,22 @@ border-radius: 1rem;
 cursor:pointer;
 }
 /* .pricing-container:active, .pricing-container:target, */
-.pricing-container:hover {
+/* .pricing-container:hover {
     
     /* background: linear-gradient(104deg,#622a81 0%, #0050ff 80%);
     background: -webkit-linear-gradient(104deg,#622a81 0%, #0050ff 80%);
     background: -moz-linear-gradient(104deg,#622a81 0%, #0050ff 80%); */
-    font-size:1.1rem;
+    /* font-size:1.1rem;
     width:12rem;
     background: blueviolet;
-    color: white;
+    color: white; */
     /* box-shadow: 4px 9px 54px 18px rgba(0,0,0,0.63);
 -webkit-box-shadow: 4px 9px 54px 18px rgba(0,0,0,0.63);
 -moz-box-shadow: 4px 9px 54px 18px rgba(0,0,0,0.63); */
-padding: 1.2rem 3rem;
+/* padding: 1.2rem 3rem; */
 
    
-}
+/* }  */
 
 
 .pricing-container .price {
@@ -81,11 +81,11 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
 }
 
-.pricing-container .learn-more-btn:hover{
+/* .pricing-container .learn-more-btn:hover{
     font-size: 1.05rem;
     border-radius:10px;
  font-weight: bold;
-}
+} */
 
 .pricing-container hr {
     border-top: 1px solid blueviolet;
@@ -100,10 +100,10 @@ background-clip: text;
        
     }
     
-    .yearly:hover {
+    /* .yearly:hover {
         background: black;
         color: white;
-    }
+    } */
     
     .yearly hr {
         border-top: 1px solid black;
@@ -156,3 +156,7 @@ padding: 1.2rem 3rem;
          font-weight: bold;
         }
         
+        
+        .yearly.active .learn-more-btn {
+            color: black;
+        }
