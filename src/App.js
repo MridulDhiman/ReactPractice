@@ -1,7 +1,7 @@
 
 import Pricing from "./Components/Pricing";
 import TogglePrice from "./Components/TogglePrice";
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 
 const prices = {
   monthly: [
@@ -18,9 +18,12 @@ yearly: [
 function App() {
   const [delivered, setDelivered] = useState(prices.monthly);
   const [isYearly, setIsYearly] = useState(false);
+  
+
 
 
 const monthlyFlagHandler = (flag) => {
+  
 if(flag === false) {
 setDelivered(prices.yearly);
 setIsYearly(true);
@@ -31,11 +34,15 @@ else {
   setIsYearly(false);
 }
 }
+
+
+
+
   return (
    <>
    <h1>Out Pricing</h1>
-     <TogglePrice setMonthlyFlag={monthlyFlagHandler}/>
-     <Pricing isYearly={isYearly} prices={delivered}/>
+     <TogglePrice  setMonthlyFlag={monthlyFlagHandler}/>
+     <Pricing  isYearly={isYearly} prices={delivered}/>
    </>
   );
 }

@@ -1,12 +1,19 @@
 import PricingItem from "./PricingItem";
 import "./Pricing.css";
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 const Pricing = ({prices, isYearly}) => {
-const [activePosts, setActivePosts] = useState([false, true, false]);
+    const initialData = [false, true, false];
+const [activePosts, setActivePosts] = useState(initialData);
 const [prevActivePost, setPrevActivePost] = useState(1);
 
+useEffect(() => {
+    setActivePosts(initialData);
+    setPrevActivePost(1);
+}, [isYearly]);
+
 const onClick = (index) => {
+
      setActivePosts((prevState) => {
         const new_state = prevState;
         new_state[prevActivePost] = false;

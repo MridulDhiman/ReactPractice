@@ -13,14 +13,16 @@ const TogglePrice = ({setMonthlyFlag}) => {
         setMonthlyFlag(true);
     }
     const clickHandler = (e) => {
-        console.log("it's working");
+      
        setIsMonthly(false);
        
     }
     const offClickHandler = (e) => {
+        
         setIsMonthly(true);
        
     }
+
     const toggleIcon = isMonthly === true ? <ToggleOnIcon fontSize="large" className='toggle-icon' onClick={clickHandler}/>
     : <ToggleOffIcon fontSize='large' style={{color: "black"}} className='toggle-icon' onClick={offClickHandler}/>
 
