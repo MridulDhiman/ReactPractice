@@ -7,6 +7,9 @@ const Pricing = ({prices, isYearly}) => {
 const [activePosts, setActivePosts] = useState(initialData);
 const [prevActivePost, setPrevActivePost] = useState(1);
 
+    // iska matlab hai ki: jab bhi toggle (state change hogi) hoga => initialise krdo (active post ko)
+  // jab bhi isYearly change hoga => vo code run ho jayega => if(condition) {} => involving multiple components
+  // tab useEffect krna hoga 
 useEffect(() => {
     setActivePosts(initialData);
     setPrevActivePost(1);
